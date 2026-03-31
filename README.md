@@ -7,8 +7,7 @@ Scripts for comparing CYGNSS satellite mean square slope (MSS) observations agai
 ## Scripts
 
 ### `driver_mss.py`
-**Main entry point.** Orchestrates the full pipeline:
-0. You must run `ingest_observations.py` in the repo `observation-processing` for the date ranges you are interested in (set in constants.py) in order to have the raw files from PODAAC available locally (or download them yourself)
+**Main entry point.** Orchestrates the full pipeline. You must first run `ingest_observations.py` in the repo `observation-processing` for the date ranges you are interested in (set in constants.py) in order to have the raw files from PODAAC available locally (or download them yourself)
 1. Fetches Spotter buoy MSS data for a given date range
 2. Fetches and loads CYGNSS L2 data via `save_cygnss.py`
 3. Co-locates the two datasets in space (20 km radius) and time (±1 hour)
