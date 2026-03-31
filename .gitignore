@@ -1,0 +1,17 @@
+*.nc
+.DS_Store
+.idea/
+*netcdf_output
+*.png
+*.log
+*.zip
+*.venv/
+*.bin
+*.bufr4
+*/bufr_output
+*.txt
+*.csv
+__pycache__/
+**/data/
+**/plots/
+.env
